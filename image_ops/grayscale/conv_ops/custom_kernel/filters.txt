@@ -1,0 +1,32 @@
+Emboss Filter (for 3D effect):
+
+vector<int> custom_filter = {
+        -2, -1,  0,
+        -1,  1,  1,
+         0,  1,  2,        
+    };
+    
+Sharpen Filter :
+
+vector<int> custom_filter = {
+     0, -1,  0,
+    -1,  5, -1,
+     0, -1,  0
+};
+
+Edge Detection:
+
+1.sobel X
+vector<int> custom_filter = {
+    -1, 0, 1,
+    -2, 0, 2,
+    -1, 0, 1
+};
+
+2.sobel Y
+vector<int> custom_filter = {
+    -1, -2, -1,
+     0,  0,  0,
+     1,  2,  1
+};
+
