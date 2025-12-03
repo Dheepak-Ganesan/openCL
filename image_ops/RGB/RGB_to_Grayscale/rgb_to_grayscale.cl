@@ -13,7 +13,7 @@ __kernel void rgb_to_grayscale(__global int* input,__global int* output, const i
     output[index] = (int)(0.299f * R + 0.587f * G + 0.114f * B);
 }
 
-/*
+/* CPU reference code:
     int plane = HEIGHT * WIDTH;
     for(int h=0; h<HEIGHT; h++)
         for(int w=0; w<WIDTH; w++)
